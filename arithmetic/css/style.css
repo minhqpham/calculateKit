@@ -15,19 +15,28 @@ input[type=reset] {
 input[type=text] {
     text-align: right;
     height: 50px;
-    width: 240px;
+    width: 2405x;
 }
 
-.control {
+#outer {
     margin: 0px auto;
-    height: 350px;
+    height: 500px;
+    width: 400px;
+    background-color: #e5e5e5;
+    border-radius: 12px;
+    border-bottom: 4px solid saddlebrown;
+}
+
+#control {
+    margin: 0px auto;
+    height: 440px;
     width: 367px;
     background-color: #251b0e;
     border-radius: 12px;
     border-bottom: 4px solid saddlebrown;
 }
 
-#xoxo {
+#buttons {
     float: left;
     margin-top: 20px;
     margin-left: 20px;
