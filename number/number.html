@@ -1,0 +1,40 @@
+<html>
+        <head>
+                <title>Number converter</title>
+                <link rel="stylesheet" href="css/style.css">
+                <script type = "text/javascript">
+                    function dec2bin() {
+                        var x = document.getElementById("deci").value;
+                        if ((/[^0-9]/g.test(x)) || x == "") {
+                                alert ("You must enter an integer decimal number!");
+                                document.getElementById("deci").value = "";
+                                document.getElementById("deci").focus();
+                                return false;
+                        }
+
+                        x = parseInt(x);
+                        var bin = x.toString(2);
+                        var hex = x.toString(16).toUpperCase();
+                        var octal = x.toString(8);
+
+                        var figs = "The Binary Representation of " + x + " is " + bin + "<br>";
+                        figs = figs + "The Hexadecimal Representation of " + x + " is " + hex + "<br>";
+                        figs = figs + "The Octal Representation of " + x + " is " + octal + "<br>";
+
+                        document.getElementById("result").innerHTML = figs;
+                    }
+                </script>
+        </head>
+
+        <body>
+                <div id="main-content">
+                        <h1>Number Conversion</h1>
+                        <b>Insert Decimal Number: </b><input type="text" name="deci" id="deci"/>
+                        <br>
+                        <input type="submit" name="submit" value="Convert" onclick="dec2bin()"/>
+                        <div id = "result"></div>
+                        <br>
+                        <a href="../index.html">Back to menu</a>
+                </div>
+        </body>
+</html>

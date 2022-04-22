@@ -1,0 +1,40 @@
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    background: #fec5e5;
+    font: 18px Helvetica Neue;
+}
+
+#main-content {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1 {
+    font: 30px Helvetica Neue;
+}
+
+input[type="text"] {
+    width: 80px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+input[type="submit"] {
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+    display: block;
+    background: white;
+    margin: 2em 0 2em 25px;
+    padding: 6px 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    color: white;
+    background: #fdb912;
+}
